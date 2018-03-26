@@ -1,5 +1,7 @@
 package com.agutlop.ninetyproblems.solutions
 
+import scala.annotation.tailrec
+
 /**
   * P02 (*) Find the last but one element of a list.
   * Example:
@@ -12,6 +14,7 @@ object P02 {
     case ls:List[A] => ls.init.last
   }
 
+  @tailrec
   def penultimateRecursive[A](ls: List[A]): A = ls match {
     case h :: _ :: Nil => h
     case _ :: tail => penultimateRecursive(tail)

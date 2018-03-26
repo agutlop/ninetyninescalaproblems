@@ -2,6 +2,7 @@ package com.agutlop.ninetyproblems.solutions
 
 import java.util.NoSuchElementException
 
+import scala.annotation.tailrec
 import scala.util.{Failure, Success, Try}
 
 /**
@@ -20,6 +21,7 @@ object P03 {
     }
   }
 
+  @tailrec
   def nthRecursive[A](index: Int, ls: List[A]): A = {
     (index, ls) match {
       case (0, xs::_) => xs

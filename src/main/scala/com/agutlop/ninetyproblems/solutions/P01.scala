@@ -1,5 +1,7 @@
 package com.agutlop.ninetyproblems.solutions
 
+import scala.annotation.tailrec
+
 /**
   * P01 (*) Find the last element of a list.
   * Example:
@@ -10,6 +12,7 @@ object P01 {
 
   def last[A](ls: List[A]): A = ls.last
 
+  @tailrec
   def lastRecursive[A](ls: List[A]): A = {
     ls match {
       case h :: Nil => h
