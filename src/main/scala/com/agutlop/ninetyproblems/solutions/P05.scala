@@ -21,4 +21,6 @@ object P05 {
     innerReverse(ls, List())
   }
 
+  def reverseFunctional[A](ls: List[A]): List[A] = ls.foldLeft(List[A]())((acc, cur) => cur :: acc)
+
 }
