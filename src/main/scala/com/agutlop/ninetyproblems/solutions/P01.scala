@@ -10,4 +10,12 @@ object P01 {
 
   def last[A](ls: List[A]): A = ls.last
 
+  def lastRecursive[A](ls: List[A]): A = {
+    ls match {
+      case h :: Nil => h
+      case h :: tail => lastRecursive(tail)
+      case Nil => throw new NoSuchElementException
+    }
+  }
+
 }

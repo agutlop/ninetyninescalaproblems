@@ -20,4 +20,12 @@ object P03 {
     }
   }
 
+  def nthRecursive[A](index: Int, ls: List[A]): A = {
+    (index, ls) match {
+      case (0, xs::_) => xs
+      case (i, _ :: tail) => nthRecursive(i-1, tail)
+      case (_, Nil) => throw new NoSuchElementException()
+    }
+  }
+
 }
