@@ -10,7 +10,7 @@ import scala.annotation.tailrec
   */
 object P16 {
 
-  def dropRecursive[A](n: Int, ls: List[A]): List[A] = {
+  def drop[A](n: Int, ls: List[A]): List[A] = {
     @tailrec
     def innerDrop(step: Int, previous: List[A], next: List[A]): List[A] = {
       next match {
