@@ -1,6 +1,6 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
-import P09._
+import com.agutlop.ninetyproblems.solutions.lists.P09._
 
 /**
   * P11 (*) Modified run-length encoding.

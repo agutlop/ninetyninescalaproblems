@@ -1,4 +1,4 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
 import scala.util.Try
 

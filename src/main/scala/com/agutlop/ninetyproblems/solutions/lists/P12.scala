@@ -1,4 +1,4 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
 /**
   * P12 (**) Decode a run-length encoded list.

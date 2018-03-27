@@ -1,4 +1,4 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
 /**
   * P08 (**) Eliminate consecutive duplicates of list elements.

@@ -1,7 +1,7 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
+import com.agutlop.ninetyproblems.solutions.lists.P10._
 import org.scalatest.FunSuite
-import P10._
 
 class P10Test extends FunSuite {
 

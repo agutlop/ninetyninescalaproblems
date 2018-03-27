@@ -1,4 +1,4 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
 /**
   * P07 (**) Flatten a nested list structure.

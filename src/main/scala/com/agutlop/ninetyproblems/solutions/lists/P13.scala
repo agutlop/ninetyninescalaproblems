@@ -1,4 +1,4 @@
-package com.agutlop.ninetyproblems.solutions
+package com.agutlop.ninetyproblems.solutions.lists
 
 /**
   * P13 (**) Run-length encoding of a list (direct solution).
