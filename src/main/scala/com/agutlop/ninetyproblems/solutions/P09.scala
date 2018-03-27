@@ -17,10 +17,12 @@ object P09 {
     def packElements(ls: List[A]): List[A] = Try(ls.takeWhile(_ == ls.head)).getOrElse(Nil)
 
     def innerPack(ls: List[A], result: List[List[A]]): List[List[A]] =
-      Try(innerPack(ls.dropWhile(_ == ls.head), result :+ packElements(ls))).getOrElse(Nil)
+      ls match {
+        case Nil => result
+        case _ => innerPack(ls.dropWhile(_ == ls.head), result :+ packElements(ls))
+      }
 
     innerPack(ls, List[List[A]]())
-
   }
 
 }
