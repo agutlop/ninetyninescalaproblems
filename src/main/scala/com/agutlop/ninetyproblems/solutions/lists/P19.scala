@@ -25,4 +25,11 @@ object P19 {
     else r % length
   }
 
+
+  // direct implementation
+  def rotate2[A](r: Int, ls: List[A]): List[A] = {
+    val norm = if (ls.isEmpty) 0 else r % ls.length
+    if (norm < 0) rotate2(ls.length + norm, ls)
+    else ls.drop(norm) ::: ls.take(norm)
+  }
 }
