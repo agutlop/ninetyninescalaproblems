@@ -12,8 +12,7 @@ import P09._
 object P10 {
 
   def encode[A](ls: List[A]): List[(Int, A)] = {
-    val p = pack(ls)
-    p.map( l => (l.length, l.head))
+    pack(ls).map( l => (l.length, l.head))
   }
 
 }
